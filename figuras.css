@@ -1,0 +1,185 @@
+@import url(//fonts.googleapis.com/css?family=Vibur);
+body{
+    background-color: rgb(13, 17, 23);
+    font: 400 1.7vh "Vibur";
+    color: #fee;
+    margin-bottom: 80px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button{
+    padding: 5px 3px;
+    color: #ff4444;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0);
+    border: solid 1px;
+    border-radius: 3PX;
+}
+button:hover{
+    background: #ff4444;
+    color: #eeeeee;
+    box-shadow: 0 0 5px #ff4444,
+                0 0 25px #ff4444,
+                0 0 50px #ff4444,
+                0 0 200px #ff4444;
+    -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+input{
+    border: none;
+    background: #eeeeee00;
+    border-bottom: solid 2px #5e1717;
+    color: white;
+}
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 1;
+}
+input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 0; 
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+      margin: 0; 
+}
+.logo {
+    text-align: center;
+}
+
+.logo b{
+    font: 400 5vh "Vibur";
+    color: #fee;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+}
+.logo b span{
+    animation: blink linear infinite 2s;
+}
+.logo b span:nth-of-type(2){
+    animation: blink linear infinite 3s;
+}
+.subTitle{
+    text-align: center;
+}
+@keyframes blink {
+    78% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    79%{
+        color: #333;
+    }
+    80% {
+
+        text-shadow: none;
+    }
+    81% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    82% {
+        color: #333;
+        text-shadow: none;
+    }
+    83% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    92% {
+        color: #333;
+        text-shadow: none;
+    }
+    92.5% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+}
+
+#btn-twtr{
+    clear:both;
+    color:#fff;
+    border:2px solid;
+    border-radius:3px;
+    text-align:center;
+    text-decoration:none;
+    display:block;
+    font-family:sans-serif;
+    font-size:14px;
+    width:13em;
+    padding:5px 10px;
+    font-weight:600;
+    position:absolute;
+    bottom:20px;
+    left:0;
+    right:0;
+    margin:0 auto;
+    background:rgba(0,0,0,0.2);
+    box-shadow:0 0 0px 3px rgba(0,0,0,0.2);
+    opacity:0.4
+}#btn-twtr:hover{color:#fff;opacity:1}
+
+.container-figura{
+    display: flex;
+    flex-direction: column;
+    width: 45vw;
+    margin-top: 30px;
+    padding: 4rem;
+    border: 0.2rem solid #fff;
+    border-radius: 2rem;
+    color: #fff;
+    box-shadow:
+    0 0 .5rem #fff,
+    inset 0 0 .5rem #fff,
+    0 0 2rem #ff4444,
+    inset 0 0 2rem #ff4444,
+    0 0 4rem #ff4444,
+    inset 0 0 4rem #ff4444;
+}
+.container-figura:focus {
+    outline: none;
+}
+.container-figura h2{
+    margin: 5px 0 5px 0;
+    text-align: center;
+}
+.container-figura form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.container-figura_input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+.container-figura_buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+@media (min-width: 520px) {
+    main{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+    .container-figura{
+        width: 25vw;
+    }
+}
+@media (min-width: 1220px) {
+    main{
+        gap: 70px;
+    }
+}
